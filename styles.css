@@ -1,0 +1,173 @@
+:root {
+    --bg-dark: #1e1e1e;
+    --bg-card: #2a2a2a;
+    --text-light: #e0e0e0;
+    --text-dark : #504b4b;
+    --accent: #fcc512;
+    --transition-speed: 0.3s;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    min-height: 100vh;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  /* Sección de inicio con fondo e imagen y capa semitransparente */
+  #home {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    min-height: 100vh;
+    text-align: center;
+    background-image: url('imagenes/fondo-home.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+  }
+  
+  #home header h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    color: var(--accent);
+    position: relative;
+    z-index: 1;
+  }
+  
+  .team-info,
+  #enter-btn {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .team-info ul {
+    list-style: none;
+    margin-bottom: 2rem;
+  }
+  
+  .team-info li {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+  }
+  
+  #enter-btn {
+    background-color: var(--accent);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 2rem;
+    color: var(--text-dark);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: filter var(--transition-speed);
+  }
+  
+  #enter-btn:hover {
+    filter: brightness(1.1);
+  }
+  
+  /* Sección del museo */
+  #museum {
+    padding: 2rem;
+  }
+  
+  .carousel {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: var(--bg-card);
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .slide img {
+    max-width: 100%;
+    border-radius: 0.75rem;
+    margin-bottom: 1rem;
+  }
+  
+  .slide .description {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+  
+  .carousel button.prev,
+  .carousel button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: var(--text-light);
+    cursor: pointer;
+    padding: 0.5rem;
+    transition: color var(--transition-speed);
+  }
+  
+  .carousel button.prev:hover,
+  .carousel button.next:hover {
+    color: var(--accent);
+  }
+  
+  .carousel button.prev {
+    left: 1rem;
+  }
+  
+  .carousel button.next {
+    right: 1rem;
+  }
+
+  .slide {
+    position: relative;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .slide .info {
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.4); /* semitransparente */
+    padding: 0.5rem;
+  }
+  
+  .art-title {
+    font-size: 1.8rem;
+    color: #fcc512;
+    margin: 0;
+  }
+  
+  .art-author {
+    font-size: 1rem;
+    font-style: italic;
+    color: #eee;
+    margin: 0;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    z-index: 1;
+  }
+  

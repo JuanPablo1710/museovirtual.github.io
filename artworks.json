@@ -1,0 +1,20 @@
+[
+  {
+    "title" : "Capilla Sixtina",
+    "author" : "Miguel Ángel",
+    "src": "imagenes/obra1.jpg",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. \\n Nullam et lorem leo. Aenean ornare ligula in neque varius tempor. Duis porttitor, ante at ultrices rutrum, nunc augue pulvinar lorem, vel iaculis enim tortor at libero. Sed porttitor leo vel feugiat porttitor. Quisque placerat urna non ante euismod, eu eleifend justo ultricies. In euismod feugiat mi, id ornare nisi pretium non. Pellentesque mollis consequat libero, sed egestas sapien viverra sit amet. Pellentesque fringilla sapien tellus, in ullamcorper justo bibendum a. Cras malesuada interdum neque in consequat. In feugiat quam ultrices nisl tincidunt, id maximus turpis eleifend. Nunc neque neque, imperdiet ac nisi et, laoreet consectetur risus."
+  },
+  {
+    "title": "La Gioconda",
+    "author": "Leonardo da Vinci",
+    "src": "imagenes/obra2.jpg",
+    "description": "También conocida como Mona Lisa.\\nFamosa por su sonrisa enigmática."
+  },
+  {
+    "title": "El grito",
+    "author": "Edvard Munch",
+    "src": "imagenes/obra3.jpg",
+    "description": "Expresa la angustia humana.\\nUno de los íconos del arte moderno."
+  }
+]
